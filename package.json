@@ -50,7 +50,8 @@
     "watch": "tsc --watch",
     "pack:bridge": "cd assets/types/bridge && npm pack --pack-destination ../ && mv ../types-bridge-*.tgz ../bridge.tgz",
     "pack": "npm run pack:bridge && npm pack",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "capacitor:update:before": "npx vite-node ./hooks/fetch-libnode.ts"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
@@ -63,6 +64,8 @@
     "@ionic/swiftlint-config": "^2.0.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/adm-zip": "^0.5.7",
+    "adm-zip": "^0.5.16",
     "electron": "^26.2.2",
     "eslint": "^8.57.0",
     "prettier": "^3.4.2",
@@ -72,7 +75,8 @@
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^6.2.1",
     "swiftlint": "^2.0.0",
-    "typescript": "^4.5.0"
+    "typescript": "^4.5.0",
+    "vite-node": "^3.2.4"
   },
   "peerDependencies": {
     "@capacitor/core": ">=7.0.0"

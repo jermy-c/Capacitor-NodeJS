@@ -27,6 +27,11 @@ declare module '@capacitor/cli' {
        * @example "manual"
        */
       startMode?: 'auto' | 'manual';
+
+      /**
+       * Get node version
+       */
+      nodeVersion?: string;
     };
   }
 }
