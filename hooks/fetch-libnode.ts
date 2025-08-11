@@ -6,7 +6,7 @@ import path from "node:path";
 import { cwd } from "node:process";
 
 async function getConfigPath() {
-  for await (let path of glob("**/capacitor.config.{ts,json}")) {
+  for await (let path of glob("../../**/capacitor.config.{ts,json}")) {
     if (path) {
       return path;
     }
