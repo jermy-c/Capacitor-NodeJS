@@ -101,6 +101,7 @@ async function extractAsset(zipPath: string, destinationPath: string) {
 
 async function main() {
   let path = await getConfigPath();
+  console.log(cwd(), path);
   if (!path) {
     console.error("config not found");
     return;
