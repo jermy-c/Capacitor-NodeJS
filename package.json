@@ -16,6 +16,7 @@
     "dist/",
     "ios/Plugin/",
     "electron/",
+    "hooks/",
     "CapacitorNodejs.podspec"
   ],
   "author": "Rene Hampölz",
