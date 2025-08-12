@@ -52,8 +52,7 @@
     "pack:bridge": "cd assets/types/bridge && npm pack --pack-destination ../ && mv ../types-bridge-*.tgz ../bridge.tgz",
     "pack": "npm run pack:bridge && npm pack",
     "prepublishOnly": "npm run build",
-    "capacitor:update:before": "npx vite-node ./hooks/fetch-libnode.ts",
-    "install": "npm install"
+    "capacitor:update:before": "npm install && npx vite-node ./hooks/fetch-libnode.ts"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
