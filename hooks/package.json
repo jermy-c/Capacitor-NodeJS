@@ -1,0 +1,15 @@
+{
+  "name": "hooks",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  },
+  "devDependencies": {
+    "vite-node": "^3.2.4"
+  }
+}
