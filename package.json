@@ -53,7 +53,7 @@
     "pack": "npm run pack:bridge && npm pack",
     "prepublishOnly": "npm run build",
     "capacitor:update:before": "npx vite-node ./hooks/fetch-libnode.ts",
-    "install": "cd hooks && npm install"
+    "install": "npm install"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
